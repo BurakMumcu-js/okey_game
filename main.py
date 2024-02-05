@@ -13,6 +13,7 @@ def taslarıOlustur():
             taslar.extend([[renk, i]] * 2)  # bu kod iki kez eklenmesini sağlar
 
 def okeyOlustur():
+    global okey
     okey = random.choice(taslar)
     taslar.remove(okey)
     print(okey)
